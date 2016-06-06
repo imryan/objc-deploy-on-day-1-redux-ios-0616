@@ -13,16 +13,16 @@
 @property (nonatomic, assign) NSUInteger xPlayerWinCount;
 @property (nonatomic, assign) NSUInteger oPlayerWinCount;
 
--(void)resetBoard;
+- (void)resetBoard;
 
--(NSString *)playerAtColumn:(NSUInteger)column row:(NSUInteger)row;
+- (NSString *)playerAtColumn:(NSUInteger)column row:(NSUInteger)row;
 
--(BOOL)canPlayAtColumn:(NSUInteger)column row:(NSUInteger)row;
+- (BOOL)canPlayAtColumn:(NSUInteger)column row:(NSUInteger)row;
 
--(void)playXAtColumn:(NSUInteger)column row:(NSUInteger)row;
--(void)playOAtColumn:(NSUInteger)column row:(NSUInteger)row;
+- (void)playXAtColumn:(NSUInteger)column row:(NSUInteger)row;
+- (void)playOAtColumn:(NSUInteger)column row:(NSUInteger)row;
 
--(BOOL)isADraw;
--(NSString *)winningPlayer;
+- (BOOL)isADraw;
+- (NSString *)winningPlayer;
 
 @end

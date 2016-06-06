@@ -10,14 +10,20 @@
 
 @implementation FISComputerPlayer
 
-+(BOOL)isEnabled
-{
-    return NO;
++ (BOOL)isEnabled {
+    return YES;
 }
 
--(FISTicTacToePosition)nextPlay
-{
-    return FISTicTacToePositionMake(0, 0);
+- (FISTicTacToePosition)nextPlay {
+    NSUInteger col = arc4random_uniform(3);
+    NSUInteger row = arc4random_uniform(3);
+    
+    while (![self.game canPlayAtColumn:col row:row]) {
+        col = arc4random_uniform(3);
+        row = arc4random_uniform(3);
+    }
+    
+    return FISTicTacToePositionMake(col, row);
 }
 
 @end

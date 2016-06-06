@@ -8,7 +8,6 @@
 
 #import "FISTicTacToeGame.h"
 
-
 typedef struct {
     NSUInteger column;
     NSUInteger row;
@@ -16,14 +15,13 @@ typedef struct {
 
 FISTicTacToePosition FISTicTacToePositionMake(NSUInteger column, NSUInteger row);
 
-
 @interface FISComputerPlayer : NSObject
 
-+(BOOL)isEnabled;
++ (BOOL)isEnabled;
 
 @property (nonatomic, copy) NSString *symbol;
 @property (nonatomic, weak) FISTicTacToeGame *game;
 
--(FISTicTacToePosition)nextPlay;
+- (FISTicTacToePosition)nextPlay;
 
 @end
