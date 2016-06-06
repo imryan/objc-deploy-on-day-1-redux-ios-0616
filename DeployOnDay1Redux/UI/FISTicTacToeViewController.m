@@ -117,13 +117,22 @@
 
 -(void)setUpPlayerDisplays
 {
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"oPlayerWinCount"]) {
+        [[NSUserDefaults standardUserDefaults] setObject:@(self.game.oPlayerWinCount) forKey:@"oPlayerWinCount"];
+        [[NSUserDefaults standardUserDefaults] setObject:@(self.game.xPlayerWinCount) forKey:@"xPlayerWinCount"];
+    }
+    
+    NSNumber *oPlayerWinCount = [[NSUserDefaults standardUserDefaults] objectForKey:@"oPlayerWinCount"];
+    NSNumber *xPlayerWinCount = [[NSUserDefaults standardUserDefaults] objectForKey:@"xPlayerWinCount"];
+    
     self.xPlayerIconLabel.attributedText = [self centeredAttributedStringForIcon:[FAKIonIcons androidCloseIconWithSize:20]];
     self.xPlayerAIIconLabel.attributedText = [self attributedStringForAIIconForPlayer:self.xPlayer];
-    self.xPlayerWinsLabel.text = [NSString stringWithFormat:@"%lu win%@", self.game.xPlayerWinCount, self.game.xPlayerWinCount == 1 ? @"" : @"s"];
 
+    self.xPlayerWinsLabel.text = [NSString stringWithFormat:@"%@ win%@", oPlayerWinCount, [oPlayerWinCount isEqualToValue:@1] ? @"" : @"s"];
+    self.oPlayerWinsLabel.text = [NSString stringWithFormat:@"%@ win%@", xPlayerWinCount, [xPlayerWinCount isEqualToValue:@1] ? @"" : @"s"];
+    
     self.oPlayerIconLabel.attributedText = [self centeredAttributedStringForIcon:[FAKIonIcons androidRadioButtonOffIconWithSize:16]];
     self.oPlayerAIIconLabel.attributedText = [self attributedStringForAIIconForPlayer:self.oPlayer];
-    self.oPlayerWinsLabel.text = [NSString stringWithFormat:@"%lu win%@", self.game.oPlayerWinCount, self.game.oPlayerWinCount == 1 ? @"" : @"s"];
 }
 
 -(void)handleTurn
@@ -186,9 +195,11 @@
 {
     if([symbol isEqualToString:@"X"]) {
         self.game.xPlayerWinCount++;
+        [[NSUserDefaults standardUserDefaults] setObject:@(self.game.xPlayerWinCount) forKey:@"xPlayerWinCount"];
     }
     else if([symbol isEqualToString:@"O"]) {
         self.game.oPlayerWinCount++;
+        [[NSUserDefaults standardUserDefaults] setObject:@(self.game.oPlayerWinCount) forKey:@"oPlayerWinCount"];
     }
 
     self.winningPlayerSymbol = symbol;
