@@ -118,15 +118,15 @@
 -(void)setUpPlayerDisplays
 {
     if (![[NSUserDefaults standardUserDefaults] objectForKey:@"oPlayerWinCount"]) {
-        [[NSUserDefaults standardUserDefaults] setObject:@(self.game.oPlayerWinCount) forKey:@"oPlayerWinCount"];
-        [[NSUserDefaults standardUserDefaults] setObject:@(self.game.xPlayerWinCount) forKey:@"xPlayerWinCount"];
+        [[NSUserDefaults standardUserDefaults] setObject:@(0) forKey:@"oPlayerWinCount"];
+        [[NSUserDefaults standardUserDefaults] setObject:@(0) forKey:@"xPlayerWinCount"];
     }
     
     NSNumber *oPlayerWinCount = [[NSUserDefaults standardUserDefaults] objectForKey:@"oPlayerWinCount"];
     NSNumber *xPlayerWinCount = [[NSUserDefaults standardUserDefaults] objectForKey:@"xPlayerWinCount"];
     
-    self.oPlayerWinsLabel.text = [NSString stringWithFormat:@"%@ win%@", oPlayerWinCount, [oPlayerWinCount isEqualToValue:@1] ? @"" : @"s"];
-    self.xPlayerWinsLabel.text = [NSString stringWithFormat:@"%@ win%@", xPlayerWinCount, [xPlayerWinCount isEqualToValue:@1] ? @"" : @"s"];
+    self.oPlayerWinsLabel.text = [NSString stringWithFormat:@"%@ win%@", oPlayerWinCount, ([oPlayerWinCount integerValue] == 1) ? @"" : @"s"];
+    self.xPlayerWinsLabel.text = [NSString stringWithFormat:@"%@ win%@", xPlayerWinCount, ([xPlayerWinCount integerValue] == 1) ? @"" : @"s"];
     
     self.xPlayerIconLabel.attributedText = [self centeredAttributedStringForIcon:[FAKIonIcons androidCloseIconWithSize:20]];
     self.xPlayerAIIconLabel.attributedText = [self attributedStringForAIIconForPlayer:self.xPlayer];

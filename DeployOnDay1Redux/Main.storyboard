@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="He7-Q7-BBR">
-                                <rect key="frame" x="15" y="8" width="383.5" height="314.5"/>
+                                <rect key="frame" x="15" y="8" width="384" height="315"/>
                                 <fontDescription key="fontDescription" name="GillSans-UltraBold" family="Gill Sans" pointSize="252"/>
                                 <color key="textColor" red="0.078431372550000003" green="0.70196078429999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -32,18 +32,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jc-KU-W6P">
-                                <rect key="frame" x="98" y="491.5" width="11.5" height="20.5"/>
+                                <rect key="frame" x="98" y="492" width="12" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5V-jE-vFy">
-                                <rect key="frame" x="304" y="491.5" width="13" height="20.5"/>
+                                <rect key="frame" x="304" y="492" width="13" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZZ-eB-dOz">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZZ-eB-dOz">
                                 <rect key="frame" x="33" y="472" width="140" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="86k-60-DXZ"/>
@@ -58,7 +58,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV5-cz-LUV">
-                                <rect key="frame" x="89" y="559.5" width="236" height="50"/>
+                                <rect key="frame" x="89" y="560" width="236" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="236" id="Qqr-zV-SZq"/>
                                     <constraint firstAttribute="height" constant="50" id="boY-LW-D8B"/>
@@ -69,7 +69,7 @@ to enable AI opponents.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wu-L8-El1">
-                                <rect key="frame" x="240.5" y="472" width="140" height="100"/>
+                                <rect key="frame" x="241" y="472" width="140" height="100"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                 <color key="tintColor" red="0.092052072289999995" green="0.66839694979999997" blue="0.91344618799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Human"/>
@@ -79,13 +79,13 @@ to enable AI opponents.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="//" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRC-JJ-7ms">
-                                <rect key="frame" x="15" y="-4" width="383.5" height="314.5"/>
+                                <rect key="frame" x="15" y="-4" width="384" height="315"/>
                                 <fontDescription key="fontDescription" name="GillSans-UltraBold" family="Gill Sans" pointSize="90"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.90980392160000001" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irq-3f-gG2">
-                                <rect key="frame" x="0.0" y="613.5" width="414" height="122.5"/>
+                                <rect key="frame" x="0.0" y="614" width="414" height="122"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="32"/>
                                 <color key="tintColor" red="0.97647064920000004" green="0.44754040899999997" blue="0.1764705926" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Battle!"/>
@@ -152,10 +152,10 @@ to enable AI opponents.</string>
                                 <rect key="frame" x="20" y="144" width="374" height="374"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLc-ic-9At" userLabel="Row 0">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="124.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="125"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YH4-fM-IYg" customClass="FISBoardSpaceView">
-                                                <rect key="frame" x="125" y="0.0" width="124.5" height="124.5"/>
+                                                <rect key="frame" x="125" y="0.0" width="125" height="125"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="column">
                                                         <integer key="value" value="1"/>
@@ -166,7 +166,7 @@ to enable AI opponents.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4a1-cZ-fdK" customClass="FISBoardSpaceView">
-                                                <rect key="frame" x="249" y="0.0" width="124.5" height="124.5"/>
+                                                <rect key="frame" x="249" y="0.0" width="125" height="125"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="column">
                                                         <integer key="value" value="2"/>
@@ -177,7 +177,7 @@ to enable AI opponents.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbj-yo-6Le" customClass="FISBoardSpaceView">
-                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="124.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="column">
                                                         <integer key="value" value="0"/>
@@ -204,10 +204,10 @@ to enable AI opponents.</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1j-yf-pEN" userLabel="Row 1">
-                                        <rect key="frame" x="0.0" y="124" width="374" height="124.5"/>
+                                        <rect key="frame" x="0.0" y="124" width="374" height="125"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="raw-Cv-Zz1" customClass="FISBoardSpaceView">
-                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="124.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="row">
                                                         <integer key="value" value="1"/>
@@ -218,7 +218,7 @@ to enable AI opponents.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7KF-se-Jpr" customClass="FISBoardSpaceView">
-                                                <rect key="frame" x="125" y="0.0" width="124.5" height="124.5"/>
+                                                <rect key="frame" x="125" y="0.0" width="125" height="125"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="column">
                                                         <integer key="value" value="1"/>
@@ -228,8 +228,8 @@ to enable AI opponents.</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADC-Gc-ha5" customClass="FISBoardSpaceView">
-                                                <rect key="frame" x="250" y="0.0" width="124.5" height="124.5"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ADC-Gc-ha5" customClass="FISBoardSpaceView">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="125"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="column">
                                                         <integer key="value" value="2"/>
@@ -256,10 +256,10 @@ to enable AI opponents.</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BT5-cy-5D1" userLabel="Row 2">
-                                        <rect key="frame" x="0.0" y="249" width="374" height="124.5"/>
+                                        <rect key="frame" x="0.0" y="249" width="374" height="125"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Dp-LY-sTh" customClass="FISBoardSpaceView">
-                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="124.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="row">
                                                         <integer key="value" value="2"/>
@@ -270,7 +270,7 @@ to enable AI opponents.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGL-0y-HuL" customClass="FISBoardSpaceView">
-                                                <rect key="frame" x="249" y="0.0" width="124.5" height="124.5"/>
+                                                <rect key="frame" x="249" y="0.0" width="125" height="125"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="column">
                                                         <integer key="value" value="2"/>
@@ -281,7 +281,7 @@ to enable AI opponents.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fs5-TA-6km" customClass="FISBoardSpaceView">
-                                                <rect key="frame" x="125" y="0.0" width="124.5" height="124.5"/>
+                                                <rect key="frame" x="125" y="0.0" width="125" height="125"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="column">
                                                         <integer key="value" value="1"/>
@@ -365,54 +365,54 @@ to enable AI opponents.</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vs." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3B-vF-90Z">
-                                <rect key="frame" x="196" y="646" width="22.5" height="23.5"/>
+                                <rect key="frame" x="196" y="646" width="23" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYl-az-TUq">
-                                <rect key="frame" x="146" y="654" width="42" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYl-az-TUq">
+                                <rect key="frame" x="146" y="654" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgd-jw-pI6">
-                                <rect key="frame" x="226" y="654" width="42" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgd-jw-pI6">
+                                <rect key="frame" x="226" y="654" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jG-9T-Wyo">
-                                <rect key="frame" x="146" y="627" width="42" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jG-9T-Wyo">
+                                <rect key="frame" x="146" y="627" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqv-4g-WqM">
-                                <rect key="frame" x="227" y="625" width="42" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqv-4g-WqM">
+                                <rect key="frame" x="227" y="625" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIy-Aa-65q">
-                                <rect key="frame" x="146" y="684" width="41.5" height="23.5"/>
+                                <rect key="frame" x="146" y="684" width="42" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHM-xJ-ZRO">
-                                <rect key="frame" x="226" y="683" width="41.5" height="23.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHM-xJ-ZRO">
+                                <rect key="frame" x="226" y="683" width="42" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZU-WW-PxP">
-                                <rect key="frame" x="151" y="20" width="111" height="23.5"/>
+                                <rect key="frame" x="151" y="20" width="111" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.81568627449999997" green="0.50588235290000005" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aB9-FR-9XO" customClass="FISBoardSpaceView">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aB9-FR-9XO" customClass="FISBoardSpaceView">
                                 <rect key="frame" x="187" y="45" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="8d9-EL-q0s"/>
@@ -428,7 +428,7 @@ to enable AI opponents.</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPS-Bq-rI1">
-                                <rect key="frame" x="0.0" y="0.0" width="77" height="63.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="77" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="77" id="jd8-bG-BLW"/>
                                     <constraint firstAttribute="height" constant="63.5" id="x5G-02-ess"/>
@@ -540,10 +540,10 @@ to enable AI opponents.</string>
                                             </connections>
                                         </button>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxl-fM-f0t">
-                                            <rect key="frame" x="125" y="252" width="164.5" height="189"/>
+                                            <rect key="frame" x="125" y="252" width="165" height="189"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pr-0L-0we" customClass="FISBoardSpaceView">
-                                                    <rect key="frame" x="20" y="20" width="124.5" height="124.5"/>
+                                                    <rect key="frame" x="20" y="20" width="125" height="125"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="124.5" id="J8h-cN-ecC"/>
                                                         <constraint firstAttribute="width" secondItem="0pr-0L-0we" secondAttribute="height" multiplier="1:1" id="Ljc-1N-z08"/>
@@ -557,8 +557,8 @@ to enable AI opponents.</string>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wins!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNL-nd-anv">
-                                                    <rect key="frame" x="62" y="145" width="39" height="23.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="wins!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNL-nd-anv">
+                                                    <rect key="frame" x="62" y="145" width="39" height="24"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                                     <color key="textColor" red="0.81568627449999997" green="0.50588235290000005" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -575,7 +575,7 @@ to enable AI opponents.</string>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a tie!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cts-AS-MOB">
-                                            <rect key="frame" x="137" y="290" width="140.5" height="49.5"/>
+                                            <rect key="frame" x="137" y="290" width="141" height="50"/>
                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="36"/>
                                             <color key="textColor" red="0.81568627449999997" green="0.50588235290000005" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
