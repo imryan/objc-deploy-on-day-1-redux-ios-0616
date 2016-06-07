@@ -117,16 +117,11 @@
 
 -(void)setUpPlayerDisplays
 {
-    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"oPlayerWinCount"]) {
-        [[NSUserDefaults standardUserDefaults] setObject:@(0) forKey:@"oPlayerWinCount"];
-        [[NSUserDefaults standardUserDefaults] setObject:@(0) forKey:@"xPlayerWinCount"];
-    }
+    NSInteger xPlayerWinCount = [self.game getScoreForPlayer:@"x"];
+    NSInteger oPlayerWinCount = [self.game getScoreForPlayer:@"o"];
     
-    NSNumber *oPlayerWinCount = [[NSUserDefaults standardUserDefaults] objectForKey:@"oPlayerWinCount"];
-    NSNumber *xPlayerWinCount = [[NSUserDefaults standardUserDefaults] objectForKey:@"xPlayerWinCount"];
-    
-    self.oPlayerWinsLabel.text = [NSString stringWithFormat:@"%@ win%@", oPlayerWinCount, ([oPlayerWinCount integerValue] == 1) ? @"" : @"s"];
-    self.xPlayerWinsLabel.text = [NSString stringWithFormat:@"%@ win%@", xPlayerWinCount, ([xPlayerWinCount integerValue] == 1) ? @"" : @"s"];
+    self.oPlayerWinsLabel.text = [NSString stringWithFormat:@"%lu win%@", oPlayerWinCount, (oPlayerWinCount == 1) ? @"" : @"s"];
+    self.xPlayerWinsLabel.text = [NSString stringWithFormat:@"%lu win%@", xPlayerWinCount, (xPlayerWinCount == 1) ? @"" : @"s"];
     
     self.xPlayerIconLabel.attributedText = [self centeredAttributedStringForIcon:[FAKIonIcons androidCloseIconWithSize:20]];
     self.xPlayerAIIconLabel.attributedText = [self attributedStringForAIIconForPlayer:self.xPlayer];
@@ -194,12 +189,16 @@
 -(void)endGameWithWinningPlayerSymbol:(NSString *)symbol
 {
     if([symbol isEqualToString:@"X"]) {
-        self.game.xPlayerWinCount++;
-        [[NSUserDefaults standardUserDefaults] setObject:@(self.game.xPlayerWinCount) forKey:@"xPlayerWinCount"];
+        NSInteger score = [self.game getScoreForPlayer:@"x"];
+        score++;
+        
+        [self.game saveScore:@"x" score:score];
     }
     else if([symbol isEqualToString:@"O"]) {
-        self.game.oPlayerWinCount++;
-        [[NSUserDefaults standardUserDefaults] setObject:@(self.game.oPlayerWinCount) forKey:@"oPlayerWinCount"];
+        NSInteger score = [self.game getScoreForPlayer:@"o"];
+        score++;
+        
+        [self.game saveScore:@"o" score:score];
     }
 
     self.winningPlayerSymbol = symbol;

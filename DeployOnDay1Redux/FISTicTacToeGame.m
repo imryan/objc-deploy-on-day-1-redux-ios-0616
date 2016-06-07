@@ -25,6 +25,23 @@
     return self;
 }
 
+- (void)saveScore:(NSString *)player score:(NSInteger)score {
+    [[NSUserDefaults standardUserDefaults] setInteger:score forKey:[NSString stringWithFormat:@"%@WinCount", player]];
+}
+
+- (NSInteger)getScoreForPlayer:(NSString *)player {
+    NSString *playerNameKey = [NSString stringWithFormat:@"%@WinCount", player];
+    NSInteger score = 0;
+    
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:playerNameKey]) {
+        NSLog(@"Key for %@ doesn't exist! Assigning to 0...", playerNameKey);
+    } else {
+        score = [[NSUserDefaults standardUserDefaults] integerForKey:playerNameKey];
+    }
+    
+    return score;
+}
+
 - (void)resetBoard {
     self.board = [NSMutableArray array];
     [self.board addObject:[NSMutableArray arrayWithObjects:@"", @"", @"", nil]];

@@ -13,6 +13,9 @@
 @property (nonatomic, assign) NSUInteger xPlayerWinCount;
 @property (nonatomic, assign) NSUInteger oPlayerWinCount;
 
+- (void)saveScore:(NSString *)player score:(NSInteger)score;
+- (NSInteger)getScoreForPlayer:(NSString *)player;
+
 - (void)resetBoard;
 
 - (NSString *)playerAtColumn:(NSUInteger)column row:(NSUInteger)row;
