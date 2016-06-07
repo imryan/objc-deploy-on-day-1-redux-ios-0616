@@ -125,11 +125,11 @@
     NSNumber *oPlayerWinCount = [[NSUserDefaults standardUserDefaults] objectForKey:@"oPlayerWinCount"];
     NSNumber *xPlayerWinCount = [[NSUserDefaults standardUserDefaults] objectForKey:@"xPlayerWinCount"];
     
+    self.oPlayerWinsLabel.text = [NSString stringWithFormat:@"%@ win%@", oPlayerWinCount, [oPlayerWinCount isEqualToValue:@1] ? @"" : @"s"];
+    self.xPlayerWinsLabel.text = [NSString stringWithFormat:@"%@ win%@", xPlayerWinCount, [xPlayerWinCount isEqualToValue:@1] ? @"" : @"s"];
+    
     self.xPlayerIconLabel.attributedText = [self centeredAttributedStringForIcon:[FAKIonIcons androidCloseIconWithSize:20]];
     self.xPlayerAIIconLabel.attributedText = [self attributedStringForAIIconForPlayer:self.xPlayer];
-
-    self.xPlayerWinsLabel.text = [NSString stringWithFormat:@"%@ win%@", oPlayerWinCount, [oPlayerWinCount isEqualToValue:@1] ? @"" : @"s"];
-    self.oPlayerWinsLabel.text = [NSString stringWithFormat:@"%@ win%@", xPlayerWinCount, [xPlayerWinCount isEqualToValue:@1] ? @"" : @"s"];
     
     self.oPlayerIconLabel.attributedText = [self centeredAttributedStringForIcon:[FAKIonIcons androidRadioButtonOffIconWithSize:16]];
     self.oPlayerAIIconLabel.attributedText = [self attributedStringForAIIconForPlayer:self.oPlayer];
